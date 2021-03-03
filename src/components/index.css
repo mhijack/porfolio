@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 81.25em) {
+  html {
+    font-size: 50%; /* 8px */
+  }
+}
+
+body {
+  box-sizing: inherit;
+  display: flex;
+  justify-content: center;
+}

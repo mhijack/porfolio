@@ -20,6 +20,25 @@ module.exports = {
       // use ts-loader for ts and js files so all files are converted to es5
       { test: /\.(tsx?|js)$/, exclude: /node_modules/, loader: 'ts-loader' },
       { test: /\.js$/, loader: 'source-map-loader' },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader'],
+      },
+      {
+        test: /\.svg/,
+        use: {
+          loader: "svg-url-loader",
+          options: {
+            // make all svg images to work in IE
+            iesafe: true,
+          },
+        },
+      },
     ],
   },
 

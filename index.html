@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Single Page Apps for GitHub Pages</title>
-    <meta name="description" content="Lightweight solution for deploying single page apps with GitHub Pages.">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jianyuan Chen | Software Engineer, iOS</title>
+    <meta
+      name="description"
+      content="Lightweight solution for deploying single page apps with GitHub Pages."
+    />
+    <link src="/src/index.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
+      rel="stylesheet"
+    />
     <style>
-      html, body, div, span, a, p, ul, li, h1, code, nav, input, label {
+      *,
+      *::before,
+      *::after {
         margin: 0;
-        border: 0;
         padding: 0;
         box-sizing: inherit;
-        font: inherit;
-        text-decoration: inherit;
-        text-align: inherit;
-        color: inherit;
-        background: transparent;
       }
-      /*pass window height (w/o scroll bars) down to react app, note can't use vh because that
-      includes scroll bars and mobile browser footer, etc so doesn't give viewable area*/
-      html, body { height: 100%; }
-      html { background-color: rgb(0, 120, 0); }
-      #root { background-color: #F0F0F0; min-height: 100%; }
+
+      html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      @media only screen and (max-width: 81.25em) {
+        html {
+          font-size: 50%; /* 8px */
+        }
+      }
+
+      body {
+        box-sizing: inherit;
+        display: flex;
+        justify-content: center;
+      }
     </style>
 
     <!-- favicon -->
-    <link rel="icon" type=”image/svg+xml” href="/favicon/green-grid-144-168-192.svg">
-    <link rel="alternate icon" type="image/png" href="/favicon/green-grid-144-168-192-512x512.png">
-    <link rel="apple-touch-icon" href="/favicon/green-grid-144-168-192-180x180.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="/favicon/manifest.json" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <meta name="theme-color" content="#000000" />
 
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
@@ -44,19 +62,24 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash,
           );
         }
-      }(window.location))
+      })(window.location);
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
-
   </head>
   <body>
     <div id="root"></div>

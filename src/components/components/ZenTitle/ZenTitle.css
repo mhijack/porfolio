@@ -1,0 +1,37 @@
+.zen-title {
+  text-align: center;
+  line-height: 4rem;
+
+  grid-column: middle / full-end;
+  grid-row: 3 / 4;
+
+  justify-self: start;
+  align-self: center;
+}
+
+.hover-title {
+  font-size: 4rem;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+.hover-title:hover {
+  color: #f44;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 65.625em) {
+  .zen-title {
+    grid-column: full-start / full-end;
+    justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .zen-title {
+    line-height: 2rem;
+  }
+  .hover-title {
+    font-size: 2rem;
+  }
+}

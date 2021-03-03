@@ -1,0 +1,24 @@
+.App {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: [full-start] minmax(min-content, max-content) [middle] minmax(
+      min-content,
+      1fr
+    ) [full-end];
+  grid-row-gap: 3rem;
+  grid-column-gap: 3rem;
+}
+
+/* width / 16 = _em */
+@media only screen and (max-width: 65.625em) {
+  .App {
+    grid-template-columns: [full-start] minmax(min-content, 1fr) [full-end];
+    grid-row-gap: 5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .App {
+    grid-row-gap: 1.5rem;
+  }
+}

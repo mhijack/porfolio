@@ -1,0 +1,32 @@
+.link {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  transition: transform 0.2s;
+  position: relative;
+}
+
+.link:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.link:hover {
+  transform: translateY(-0.2rem);
+}
+
+/* .link::after {
+    content: '';
+    background-color: #000;
+    width: 0;
+    height: 1px;
+    transition: width 0.2s;
+
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+}
+
+.link:hover::after {
+    width: 100%;
+} */

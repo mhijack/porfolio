@@ -1,0 +1,25 @@
+.line {
+  font-size: 1.8rem;
+  font-family: 'Inconsolata', monospace;
+  color: #000;
+  width: 100%;
+
+  display: inline-block;
+  height: 3rem;
+  opacity: 0.4;
+  transition: color 0.2s, opacity 0.2s;
+}
+
+.line:hover {
+  color: #2e2e2e;
+  opacity: 1;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .line {
+    font-size: 1.2rem;
+    height: auto;
+  }
+}

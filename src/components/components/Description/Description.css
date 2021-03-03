@@ -1,0 +1,84 @@
+.description {
+  font-size: 2.4rem;
+  font-weight: 300;
+
+  grid-column: full-start / full-end;
+  justify-self: start;
+}
+
+p {
+  line-height: 4rem;
+}
+
+.title {
+  font-size: 3.6rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  font-weight: 700;
+}
+
+.hover {
+  transition: color 0.2s;
+  position: relative;
+
+  font-weight: 600;
+}
+
+.hover:hover {
+  transition: all 0.5s;
+  color: #f44;
+}
+
+.hover::after {
+  content: '';
+  background-color: #000;
+  width: 0;
+  height: 0.1rem;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.hover:hover::after {
+  width: 100%;
+  background-color: #f44;
+}
+
+.danger {
+  color: #f44;
+}
+
+.email-link:link,
+.email-link:visited {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.2s;
+}
+
+.email-link:hover {
+  color: #f44;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .description {
+    width: auto;
+  }
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  p {
+    line-height: 2.5rem;
+  }
+
+  p.info,
+  p.contact {
+    font-size: 1.6rem;
+  }
+  p.title {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}

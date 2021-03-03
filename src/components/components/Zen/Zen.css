@@ -1,0 +1,29 @@
+.zen {
+  /* margin-top: 2rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  grid-column: full-start / middle;
+}
+
+.highlighted {
+  color: #f44;
+  opacity: 1;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 65.625em) {
+  .zen {
+    grid-column: full-start / full-end;
+    align-self: start;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .zen {
+    line-height: 1rem;
+  }
+}

@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 100%;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  box-shadow: 5px 10px 20px -20px rgba(85, 172, 238, 1);
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+
+  grid-column: full-start / full-end;
+  grid-row: 1 / 2;
+}
+
+.icon {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.icon--github svg {
+  height: 3.4rem;
+  fill: #333;
+}
+
+.icon--twitter svg {
+  fill: #1da1f2;
+}
