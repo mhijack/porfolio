@@ -1,8 +1,8 @@
 {
-  "name": "spa-github-pages",
-  "version": "6.1.0",
+  "name": "portfolio",
+  "version": "1.0.0",
   "private": true,
-  "description": "Single Page Apps for GitHub Pages",
+  "description": "Jianyuan Chen's portfolio",
   "scripts": {
     "start": "webpack-dev-server --host 0.0.0.0 --disable-host-check --open",
     "build": "webpack -p",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafgraph/spa-github-pages.git"
+    "url": "git+https://github.com/mhijack/porfolio.git"
   },
   "author": "Jianyuan Chen (Jack) <jianyuan.chen12@gmail.com>",
   "license": "MIT",
