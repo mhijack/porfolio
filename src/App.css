@@ -1,10 +1,12 @@
 .App {
   padding: 1rem;
   display: grid;
-  grid-template-columns: [full-start] minmax(min-content, max-content) [middle] minmax(
+  grid-template-columns:
+    [full-start] minmax(min-content, max-content) [middle] minmax(
       min-content,
       1fr
-    ) [full-end];
+    )
+    [full-end];
   grid-row-gap: 3rem;
   grid-column-gap: 3rem;
 }
